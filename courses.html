@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+      <title>Courses</title>
+     
+</head>
+<style>
+.alert{
+   background-color:antiquewhite;
+   width: 500px;
+   height: 120px;
+   border-radius:9px;
+   position:absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display:none;
+   z-index: 1000;
+}
+p{
+  line-height: 25px;
+ 
+}
+  
+.cover{
+   width:100%; 
+   height: 180vh;
+   position: absolute;
+   background-color:rgba(0, 0, 0, 0.5);
+   top:0;
+   left:0;
+   z-index: 999 ; 
+   display: none;
+   }
+.piccontent .btn{
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #555;
+   color: white;
+   font-size: 16px;
+   padding: 12px 24px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   display:none;
+   z-index: 1000;
+
+}
+.coverimg{
+   position:absolute ; 
+   background-color:black;
+   top: 95%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0.5;
+   height: 809px;
+   width: 870px;
+   z-index: 999;
+   box-sizing: border-box;
+   display: none;
+}
+#close{
+   width:25px;
+   height:25px;
+   background-color:black ; 
+   color:white ; 
+   float:right;
+   border-radius:50%;
+   line-height: 25px;
+   cursor: pointer;
+}
+</style>
+<body style="background:black;">
+    <center>><ul style="font-size:30px">
+    <li><a href="index.html" style="color:blue; text-decoration:none;">HOME</a></li>
+    <li><a href="courses.html"style="color:red ;text-decoration:none;">COURSES</a></li>
+    <li><a href="contact.html" style="color:green;text-decoration:none;">CONTACT</a></li>
+    </ul></center><hr>
+    <h1 style="text-align: center; font-size:60px;font-weight: 700;color:white;">COURSES</h1>
+    <hr>
+    <center>
+       <div class="cover"></div>
+           <div class="piccontent">
+                  <img class="image" src="Capture.png"   >
+                  <div class="coverimg"></div>
+       <button class="btn">View</button>
+       <div class="alert">
+          <span id="close">&times;</span>
+          <p>This is GoMyCode Track.<br> Each track has its own goal <br>By adopting this track,you chose your own goal.</p></div>
+       </div> 
+
+     <h2 style="font-size:40px;">FeedBack</h2>
+     <button id="bold_button">B</button>
+     <button onclick="italic()">I</button>
+     <button onclick="under()">UNDERLINE</button>
+     <select onchange="selection()" id="selection">
+            <option value="20px" >20px</option>
+            <option value="30px">30px</option>
+            <option value="40px" >40px</option>
+           
+         </select>
+         <select onchange="police()" id="font">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Gevena">Gevena</option>
+               
+             </select><br></br>
+             <textarea rows="4" cols="50" style="border-radius:7px;" id="modi"></textarea>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</html>
